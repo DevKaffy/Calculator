@@ -1,16 +1,16 @@
-function calculator (input1, input2, operator){
+const operator = prompt('Enter operator (either +, -, *, /):');
+const number1 =  parseFloat(prompt('Enter first number:'));
+const number2 = parseFloat(prompt('Enter second number:'));
 let result = 0
 if(operator=='+'){
-    result = input1 + input2
+    result = number1 + number2;
 }else if(operator=='-'){
-    result = input1 - input2
+    result = number1 - number2;
 }else if (operator =='*'){
-    result = input1 * input2
+    result = number1 * number2;
 }else if (operator == '/'){
-    result = input1 / input2
+    result = number1 / number2;
 }else{
     result = 'not valid'
 }
-return result
-}
-console.log(calculator (10, 2, '+'))
+console.log('Result is ' + result)
